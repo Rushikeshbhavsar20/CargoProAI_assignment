@@ -1,0 +1,36 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "cargoproai",
+          "appId": "1:499053092981:android:d1a01ac2f1a270ad6e583c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "cargoproai",
+          "configurations": {
+            "android": "1:499053092981:android:d1a01ac2f1a270ad6e583c",
+            "web": "1:499053092981:web:833403c2c1417ec06e583c"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
